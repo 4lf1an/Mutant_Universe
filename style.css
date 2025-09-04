@@ -1,0 +1,68 @@
+/* General */
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  background: url("asset/img/bg-1.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  color: #ffd166; /* Kuning cerah dari Color Hunt */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Bayangan teks untuk keterbacaan */
+}
+
+/* Carousel */
+.carousel-item img {
+  max-height: 600px;
+  object-fit: cover;
+  image-rendering: optimizeQuality;
+}
+
+/* Project Section */
+.project {
+  background-color: #06d6a0; /* Cyan cerah dari Color Hunt */
+  color: #073b4c; /* Biru tua untuk teks */
+}
+
+.project-card img {
+  max-height: 200px;
+  object-fit: cover;
+  image-rendering: optimizeQuality;
+}
+
+/* Profile Section */
+#profile {
+  background-color: #ffffff; /* Putih untuk kontras */
+  color: #073b4c; /* Biru tua untuk teks */
+}
+
+/* Footer */
+.footer {
+  background-color: #073b4c; /* Biru tua dari Color Hunt */
+  color: #ffffff; /* Putih untuk teks */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 30%;
+    padding-bottom: 30%;
+  }
+  .carousel-item img {
+    max-height: 400px;
+  }
+  .project-card img {
+    max-height: 150px;
+  }
+}

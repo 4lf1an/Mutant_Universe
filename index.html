@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Akademi Mutant Universe</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- CDN Font Awesome (versi 6.6.0) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Css AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body style="font-family: 'Poppins', sans-serif">
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      style="background-color: #073b4c"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">Tretan Universe</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#profile">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex ms-3" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-aos="fade-in"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="slide1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="slide2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="slide3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="asset/img/project/slide1.jpg"
+            class="d-block w-100 img-fluid"
+            alt="slide1"
+            style="max-height: 600px; object-fit: cover"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Eksplorasi Tretan Universe</h5>
+            <p>Mulai petualangan epik bersama para mutan!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="asset/img/project/slide2.jpg"
+            class="d-block w-100 img-fluid"
+            alt="slide2"
+            style="max-height: 600px; object-fit: cover"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Kreativitas Tanpa Batas</h5>
+            <p>Ngoding, desain, dan ngopi dalam satu universe.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="asset/img/project/slide3.jpg"
+            class="d-block w-100 img-fluid"
+            alt="slide3"
+            style="max-height: 600px; object-fit: cover"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Bersama Membangun Masa Depan</h5>
+            <p>Proyek mutan yang mengubah dunia digital.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container-fluid hero" data-aos="fade-up">
+      <div class="container text-center py-5">
+        <h4 class="display-5">
+          Selamat Datang di web <span>Tretan Universe</span>
+        </h4>
+        <p class="display-6">
+          Selamat datang di Tretan Universe, tempat para mutan berbagi cerita
+          epik dan petualangan gila! Dari ngoding sampe ngopi, kami punya
+          semuanya dengan sentuhan humor dan keajaiban mutan.
+        </p>
+      </div>
+    </div>
+
+    <!-- Profile Section -->
+    <section class="profile" data-aos="fade-right" style="margin-bottom: 50px">
+      <div class="container pt-5 pb-4" id="profile">
+        <div class="text-center">
+          <h4>My <span>Profile</span></h4>
+          <p>
+            Kenalan sama Tretan Universe, komunitas mutan yang nggak cuma jago
+            ngoding, tapi juga jago bikin hidup lebih seru!
+          </p>
+          <div class="row pt-4">
+            <div class="col-md-6">
+              <img
+                src="asset/img/project/Mutant Universe.jpg"
+                class="img-fluid rounded shadow"
+                alt="Profile img"
+                style="max-height: 400px; object-fit: cover"
+              />
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+              <div>
+                <h5>Mutant Universe</h5>
+                <p>
+                  Tretan Universe adalah komunitas mutan yang lahir dari
+                  semangat kreativitas dan kolaborasi. Kami adalah sekelompok
+                  individu dengan kekuatan unik, mulai dari ngoding aplikasi
+                  canggih sampai bikin kopi yang bikin melek seharian. Berbasis
+                  di Brebes, Jawa Tengah, kami siap menjelajahi dunia digital
+                  dan nyata dengan penuh tawa!
+                </p>
+                <ul class="list-unstyled">
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="fa-solid fa-envelope text-warning me-2"></i>
+                    <span>tretan@universe.com</span>
+                  </li>
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="fa-solid fa-phone text-warning me-2"></i>
+                    <span>+62 856-9422-4470</span>
+                  </li>
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="fa-solid fa-location-dot text-warning me-2"></i>
+                    <span>Brebes, Center Java, Indonesia</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Section -->
+    <section class="project" data-aos="zoom-in">
+      <div class="container-fluid pt-5 pb-4">
+        <div class="container text-center" id="project">
+          <h4>My <span>Project</span></h4>
+          <p>
+            Ini adalah beberapa proyek epik dari para mutan Tretan Universe.
+            Setiap mutan punya cerita dan kekuatan sendiri!
+          </p>
+          <div class="row pt-4 justify-content-center">
+            <!-- Project 1: Gerall -->
+            <div class="col-md-4 mb-4">
+              <div class="card shadow project-card">
+                <img
+                  src="asset/img/project/gerall.jpg"
+                  class="card-img-top img-fluid"
+                  alt="Gerall"
+                  style="max-height: 200px; object-fit: cover"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Gerall</h5>
+                  <p class="card-text">
+                    <strong>Biodata:</strong> Gerall, mutan dengan kekuatan
+                    super analisis data. Dia bisa mengubah tumpukan kode jadi
+                    aplikasi canggih dalam sekejap. <br />
+                    <strong>Umur:</strong> 25 tahun <br />
+                    <strong>Kekuatan:</strong> Membaca bug kode lebih cepat dari
+                    kilat. <br />
+                    <strong>Proyek:</strong> Membuat aplikasi analisis data
+                    untuk membantu mutan lain mengelola misi mereka.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn"
+                    style="background-color: #ef476f; color: white"
+                    >Detail</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Project 2: Aanwell -->
+            <div class="col-md-4 mb-4">
+              <div class="card shadow project-card">
+                <img
+                  src="asset/img/project/aanwell.jpg"
+                  class="card-img-top img-fluid"
+                  alt="Aanwell"
+                  style="max-height: 200px; object-fit: cover"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Aanwell</h5>
+                  <p class="card-text">
+                    <strong>Biodata:</strong> Aanwell, mutan desainer ulung yang
+                    bisa bikin UI/UX yang bikin orang takjub. <br />
+                    <strong>Umur:</strong> 23 tahun <br />
+                    <strong>Kekuatan:</strong> Mengubah ide abstrak jadi desain
+                    visual yang memukau. <br />
+                    <strong>Proyek:</strong> Merancang antarmuka website Tretan
+                    Universe yang super kece.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn"
+                    style="background-color: #ef476f; color: white"
+                    >Detail</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Project 3: Salman -->
+            <div class="col-md-4 mb-4">
+              <div class="card shadow project-card">
+                <img
+                  src="asset/img/project/salman.jpg"
+                  class="card-img-top img-fluid"
+                  alt="Salman"
+                  style="max-height: 200px; object-fit: cover"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Salman</h5>
+                  <p class="card-text">
+                    <strong>Biodata:</strong> Salman, mutan dengan kemampuan
+                    hacking etis dan keamanan jaringan. <br />
+                    <strong>Umur:</strong> 27 tahun <br />
+                    <strong>Kekuatan:</strong> Menemukan celah keamanan sebelum
+                    musuh menyadarinya. <br />
+                    <strong>Proyek:</strong> Mengembangkan sistem keamanan untuk
+                    server Tretan Universe.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn"
+                    style="background-color: #ef476f; color: white"
+                    >Detail</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Project 4: Idris -->
+            <div class="col-md-4 mb-4">
+              <div class="card shadow project-card">
+                <img
+                  src="asset/img/project/idris.jpg"
+                  class="card-img-top img-fluid"
+                  alt="Idris"
+                  style="max-height: 200px; object-fit: cover"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Idris</h5>
+                  <p class="card-text">
+                    <strong>Biodata:</strong> Idris, mutan yang jago bikin
+                    animasi dan efek visual. <br />
+                    <strong>Umur:</strong> 24 tahun <br />
+                    <strong>Kekuatan:</strong> Membuat animasi yang bikin orang
+                    lupa kedip. <br />
+                    <strong>Proyek:</strong> Membuat video promosi epik untuk
+                    Tretan Universe.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn"
+                    style="background-color: #ef476f; color: white"
+                    >Detail</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Project 5: Xaivul -->
+            <div class="col-md-4 mb-4">
+              <div class="card shadow project-card">
+                <img
+                  src="asset/img/project/xaivul.jpg"
+                  class="card-img-top img-fluid"
+                  alt="Xaivul"
+                  style="max-height: 200px; object-fit: cover"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Xaivul</h5>
+                  <p class="card-text">
+                    <strong>Biodata:</strong> Xaivul, mutan penutup yang punya
+                    kemampuan manajemen proyek tingkat dewa. <br />
+                    <strong>Umur:</strong> 26 tahun <br />
+                    <strong>Kekuatan:</strong> Mengatur tim agar deadline nggak
+                    cuma mimpi. <br />
+                    <strong>Proyek:</strong> Mengkoordinasikan semua proyek
+                    Tretan Universe biar on track.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn"
+                    style="background-color: #ef476f; color: white"
+                    >Detail</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Project 6: Yamax -->
+            <div class="col-md-4 mb-4">
+              <div class="card shadow project-card">
+                <img
+                  src="asset/img/project/yamax.jpg"
+                  class="card-img-top img-fluid"
+                  alt="Yamax"
+                  style="max-height: 200px; object-fit: cover"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Yamax</h5>
+                  <p class="card-text">
+                    <strong>Biodata:</strong> Yamax, mutan dengan bakat
+                    storytelling dan content creator. <br />
+                    <strong>Umur:</strong> 22 tahun <br />
+                    <strong>Kekuatan:</strong> Bikin konten yang bikin orang
+                    ketawa sampe lupa waktu. <br />
+                    <strong>Proyek:</strong> Mengelola media sosial Tretan
+                    Universe dengan konten viral.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn"
+                    style="background-color: #ef476f; color: white"
+                    >Detail</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" data-aos="fade-up">
+      <div class="container-fluid py-5">
+        <div class="container text-center">
+          <h3 class="display-5">My <span>Skills</span></h3>
+          <p>
+            Ini adalah keahlian para mutan Tretan Universe yang bikin kami beda
+            dari yang lain!
+          </p>
+          <div class="row pt-3 pb-3">
+            <!-- Skill 1 -->
+            <div class="col-md-3 mb-3">
+              <i class="fa-solid fa-code fa-3x" style="color: #06d6a0"></i>
+              <p>Ngoding</p>
+            </div>
+            <!-- Skill 2 -->
+            <div class="col-md-3 mb-3">
+              <i class="fa-solid fa-utensils fa-3x" style="color: #06d6a0"></i>
+              <p>Madang</p>
+            </div>
+            <!-- Skill 3 -->
+            <div class="col-md-3 mb-3">
+              <i class="fa-solid fa-bed fa-3x" style="color: #06d6a0"></i>
+              <p>Turu</p>
+            </div>
+            <!-- Skill 4 -->
+            <div class="col-md-3 mb-3">
+              <i class="fa-solid fa-mug-hot fa-3x" style="color: #06d6a0"></i>
+              <p>Ngopi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" data-aos="fade-left">
+      <div class="container-fluid py-5" style="background-color: #ffd166">
+        <div class="container pt-2">
+          <h3 class="display-5"><span>My </span>Contact</h3>
+          <p>
+            Hubungi kami untuk join petualangan mutan atau sekadar ngobrol
+            sambil ngopi!
+          </p>
+          <div class="row">
+            <!-- Pesan -->
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Content</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn"
+                style="background-color: #ef476f; color: white"
+              >
+                Kirim
+              </button>
+            </div>
+            <!-- Maps -->
+            <div class="col-md-6">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13958.054890238189!2d116.44704903890673!3d-8.411273689011455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcc2d800216cccf%3A0x3c03cdbf11d30a1e!2sGn.%20Rinjani!5e1!3m2!1sid!2sid!4v1756968692128!5m2!1sid!2sid"
+                width="400"
+                height="350"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="footer">
+      <div
+        class="footer pt-4 text-center"
+        style="background-color: #073b4c; color: white"
+      >
+        <div class="container">
+          <!-- Icon Sosmed -->
+          <div class="pb-3">
+            <!-- Youtube -->
+            <a
+              href="https://youtube.com/@TretanUniverse"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i
+                class="fa-brands fa-youtube fa-2x mx-2"
+                style="color: #ff0000"
+              ></i>
+            </a>
+            <!-- LinkedIn -->
+            <a
+              href="https://linkedin.com/in/@martadinata"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i
+                class="fa-brands fa-linkedin fa-2x mx-2"
+                style="color: #0a66c2"
+              ></i>
+            </a>
+            <!-- Facebook -->
+            <a
+              href="https://facebook.com/@sjsjfauhuhf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i
+                class="fa-brands fa-facebook fa-2x mx-2"
+                style="color: #1877f2"
+              ></i>
+            </a>
+            <!-- Twitter / X -->
+            <a
+              href="https://twitter.com/@ferryirwnd"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i
+                class="fa-brands fa-x-twitter fa-2x mx-2"
+                style="color: #000000"
+              ></i>
+            </a>
+            <!-- Instagram -->
+            <a
+              href="https://instagram.com/a_4lfn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i
+                class="fa-brands fa-instagram fa-2x mx-2"
+                style="color: #e4405f"
+              ></i>
+            </a>
+            <!-- WhatsApp -->
+            <a
+              href="https://wa.me/6285694224470"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i
+                class="fa-brands fa-whatsapp fa-2x mx-2"
+                style="color: #25d366"
+              ></i>
+            </a>
+            <!-- Github -->
+            <a
+              href="https://github.com/4lf1an"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github fa-2x mx-2" style="color: #333"></i>
+            </a>
+            <!-- Tiktok -->
+            <a
+              href="https://tiktok.com/@gakbakaljoget"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-tiktok fa-2x mx-2" style="color: #333"></i>
+            </a>
+          </div>
+          <!-- CopyRight -->
+          <figure>
+            <blockquote class="blockquote">
+              <p>
+                <span>&copy;Tretan Universe | Melayani Kebutuhan Anda</span>
+              </p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Est.
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <svg
+        id="wave"
+        style="transform: rotate(0deg); transition: 0.3s"
+        viewBox="0 0 1440 340"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+            <stop stop-color="#06D6A0" offset="0%"></stop>
+            <stop stop-color="#FFD166" offset="100%"></stop>
+          </linearGradient>
+        </defs>
+        <path
+          style="transform: translate(0, 0px); opacity: 1"
+          fill="url(#sw-gradient-0)"
+          d="M0,272L34.3,260.7C68.6,249,137,227,206,181.3C274.3,136,343,68,411,85C480,102,549,204,617,221C685.7,238,754,170,823,170C891.4,170,960,238,1029,238C1097.1,238,1166,170,1234,119C1302.9,68,1371,34,1440,68C1508.6,102,1577,204,1646,232.3C1714.3,261,1783,215,1851,164.3C1920,113,1989,57,2057,62.3C2125.7,68,2194,136,2263,170C2331.4,204,2400,204,2469,215.3C2537.1,227,2606,249,2674,238C2742.9,227,2811,181,2880,170C2948.6,159,3017,181,3086,181.3C3154.3,181,3223,159,3291,170C3360,181,3429,227,3497,209.7C3565.7,193,3634,113,3703,96.3C3771.4,79,3840,125,3909,130.3C3977.1,136,4046,102,4114,107.7C4182.9,113,4251,159,4320,192.7C4388.6,227,4457,249,4526,266.3C4594.3,283,4663,295,4731,255C4800,215,4869,125,4903,79.3L4937.1,34L4937.1,340L4902.9,340C4868.6,340,4800,340,4731,340C4662.9,340,4594,340,4526,340C4457.1,340,4389,340,4320,340C4251.4,340,4183,340,4114,340C4045.7,340,3977,340,3909,340C3840,340,3771,340,3703,340C3634.3,340,3566,340,3497,340C3428.6,340,3360,340,3291,340C3222.9,340,3154,340,3086,340C3017.1,340,2949,340,2880,340C2811.4,340,2743,340,2674,340C2605.7,340,2537,340,2469,340C2400,340,2331,340,2263,340C2194.3,340,2126,340,2057,340C1988.6,340,1920,340,1851,340C1782.9,340,1714,340,1646,340C1577.1,340,1509,340,1440,340C1371.4,340,1303,340,1234,340C1165.7,340,1097,340,1029,340C960,340,891,340,823,340C754.3,340,686,340,617,340C548.6,340,480,340,411,340C342.9,340,274,340,206,340C137.1,340,69,340,34,340L0,340Z"
+        ></path>
+        <defs>
+          <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
+            <stop stop-color="#EF476F" offset="0%"></stop>
+            <stop stop-color="#073B4C" offset="100%"></stop>
+          </linearGradient>
+        </defs>
+        <path
+          style="transform: translate(0, 50px); opacity: 0.9"
+          fill="url(#sw-gradient-1)"
+          d="M0,0L34.3,0C68.6,0,137,0,206,51C274.3,102,343,204,411,204C480,204,549,102,617,56.7C685.7,11,754,23,823,51C891.4,79,960,125,1029,170C1097.1,215,1166,261,1234,272C1302.9,283,1371,261,1440,215.3C1508.6,170,1577,102,1646,102C1714.3,102,1783,170,1851,198.3C1920,227,1989,215,2057,204C2125.7,193,2194,181,2263,170C2331.4,159,2400,147,2469,158.7C2537.1,170,2606,204,2674,192.7C2742.9,181,2811,125,2880,130.3C2948.6,136,3017,204,3086,204C3154.3,204,3223,136,3291,130.3C3360,125,3429,181,3497,192.7C3565.7,204,3634,170,3703,130.3C3771.4,91,3840,45,3909,39.7C3977.1,34,4046,68,4114,90.7C4182.9,113,4251,125,4320,124.7C4388.6,125,4457,113,4526,107.7C4594.3,102,4663,102,4731,124.7C4800,147,4869,193,4903,215.3L4937.1,238L4937.1,340L4902.9,340C4868.6,340,4800,340,4731,340C4662.9,340,4594,340,4526,340C4457.1,340,4389,340,4320,340C4251.4,340,4183,340,4114,340C4045.7,340,3977,340,3909,340C3840,340,3771,340,3703,340C3634.3,340,3566,340,3497,340C3428.6,340,3360,340,3291,340C3222.9,340,3154,340,3086,340C3017.1,340,2949,340,2880,340C2811.4,340,2743,340,2674,340C2605.7,340,2537,340,2469,340C2400,340,2331,340,2263,340C2194.3,340,2126,340,2057,340C1988.6,340,1920,340,1851,340C1782.9,340,1714,340,1646,340C1577.1,340,1509,340,1440,340C1371.4,340,1303,340,1234,340C1165.7,340,1097,340,1029,340C960,340,891,340,823,340C754.3,340,686,340,617,340C548.6,340,480,340,411,340C342.9,340,274,340,206,340C137.1,340,69,340,34,340L0,340Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Js AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
